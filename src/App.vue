@@ -4,9 +4,9 @@
 </script>
 
 <template>
-  <div class="app-body flex flex-col justify-between h-screen bg-hive-green-blue-400">
+  <div class="app-body flex flex-col justify-between min-h-screen bg-hive-green-blue-300">
     <AppHeader />
-    <main class="pt-28 xl:pt-20 w-full flex-1">
+    <main class="w-full flex-1">
       <router-view :key="$route.fullPath" />
     </main>
     <AppFooter />

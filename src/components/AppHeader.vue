@@ -14,19 +14,17 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header class="flex w-screen p-1 bg-honey-100 flex-col lg:flex-row text-hive-green-blue-500">
+  <header class="flex w-screen p-1 bg-honey-200 flex-col lg:flex-row text-hive-green-blue-500 content-between">
     <section
-      class="flex flex-col lg:flex-row content-center justify-center lg:max-w-6xl lg:gap-4 mx-auto"
+      class="flex flex-col lg:flex-row lg:max-w-6xl lg:gap-4 mx-auto"
     >
-      <div class="flex gap-4 justify-center">
-        <img
-          class="h-24"
-          :src="`/Logo.png`"
-          alt="A11y Hive Logo Incorporating lovea11y Logo"
-        />
-      </div>
+      <img
+        class="h-24"
+        :src="`/Logo.png`"
+        alt="A11y Hive Logo Incorporating lovea11y Logo"
+      />
       <span
-        class="text-xl lg:text-3xl text-hive-blue-green-500 font-bold py-8 tracking-tighter"
+        class="text-xl lg:text-3xl text-hive-green-blue-500 font-bold py-8 tracking-tighter"
       >
         Transforming Experiences Together
       </span>
