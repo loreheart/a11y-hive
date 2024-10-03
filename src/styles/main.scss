@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, #app {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+:root {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // color: #ffffff;
+  // background: #d67d00;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  display: block;
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: #213870;
+  text-decoration: inherit;
+  &:hover {
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+}
