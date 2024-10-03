@@ -7,13 +7,17 @@ const credits = [
   {
     text: 'LoveA11y Logo from SilkTide',
     link: 'https://silktide.com/lovea11y/'
+  }, 
+  {
+    text: 'Hive Icon Background by Andrea Charlesta on Freepik',
+    link: 'https://www.freepik.com/author/andreacharlesta'
   }
 ]
 
 </script>
 
 <template>
-  <div class="text-white font-bold">
+  <div class="text-white font-bold max-w-3xl mx-auto">
     <h1>Credits</h1>
     <ul>
       <li v-for="credit in credits" :key="`credit-link-${credit.text}`">
