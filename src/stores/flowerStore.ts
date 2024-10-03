@@ -1,13 +1,21 @@
 import { Ref, ref } from 'vue'
 import { defineStore } from 'pinia'
+// import axios from 'axios'
 
 import type { ISite } from '../types'
 import { convertCSVKeys } from '../helpers'
 import { SITE_LIST } from '../data'
 
 export const useFlowerStore = defineStore('sites', () => {
-  const initialSites: ISite[] = convertCSVKeys(SITE_LIST)
+
+  let initialSites: ISite[] = convertCSVKeys(SITE_LIST)
   const sites: Ref<ISite[]> = ref(initialSites)
+
+  // WIP API Integration
+  // const apiUrl = 'https://nectary-nonpf.ondigitalocean.app/api'
+  // axios.get(`${apiUrl}/sites`).then((response: any) => {
+  //   sites.value = response.data
+  // })
 
   const getAllFlowers = () => {
     return sites

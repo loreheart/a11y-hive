@@ -13,28 +13,26 @@
     "tailwind": "tailwind"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@vitejs/plugin-vue": "^5.1.2",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
-    "globals": "^15.10.0",
-    "pinia": "^2.2.4",
-    "tsc": "^2.0.4",
-    "vitest": "^2.1.2",
-    "vue": "^3.4.37",
-    "vue-router": "^4.4.5",
-    "vue-tsc": "^2.0.29",
-    "vite": "^5.4.1",
-    "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.3",
-    "@types/node": "^22.7.4",
     "csv-parser": "^3.0.0",
     "eslint": "^9.11.1",
     "eslint-plugin-vue": "^9.28.0",
+    "globals": "^15.10.0",
+    "pinia": "^2.2.4",
+    "sass": "^1.79.4",
     "tailwindcss": "^3.4.13",
-    "@eslint/eslintrc": "^3.1.0",
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
-    "sass": "^1.79.4"
-  },
-  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vitest": "^2.1.2",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.5",
+    "vue-tsc": "^2.0.29"
   }
 }
