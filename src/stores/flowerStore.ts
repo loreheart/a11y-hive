@@ -1,6 +1,6 @@
 import { Ref, ref } from 'vue'
 import { defineStore } from 'pinia'
-// import axios from 'axios'
+import axios from 'axios'
 
 import type { ISite } from '../types'
 import { convertCSVKeys } from '../helpers'
@@ -12,10 +12,10 @@ export const useFlowerStore = defineStore('sites', () => {
   const sites: Ref<ISite[]> = ref(initialSites)
 
   // WIP API Integration
-  // const apiUrl = 'https://nectary-nonpf.ondigitalocean.app/api'
-  // axios.get(`${apiUrl}/sites`).then((response: any) => {
-  //   sites.value = response.data
-  // })
+  const apiUrl = 'https://nectar.loreheart.com/api'
+  axios.get(`${apiUrl}/sites`).then((response: any) => {
+    sites.value = response.data
+  })
 
   const getAllFlowers = () => {
     return sites
